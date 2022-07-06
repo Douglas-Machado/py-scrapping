@@ -7,5 +7,9 @@
 
   - Clone o projeto
 
+  ### Módulos utilizados
+    pip install html2text
+    pip install beautifulsoup4
+
   - Execute o arquivo desafio-douglas.py
 
