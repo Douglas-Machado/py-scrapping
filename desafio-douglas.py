@@ -45,7 +45,7 @@ arr_body = [re.split("\s", s) for s in tag.strings if s != '\n']
 result = [word for array in arr_body for word in array if check_word(word)]
 
 # lista de palavras encontradas
-print(result)
+print(f'Lista de palavras encontradas: {result}')
 
 # quantidade de palavras encontradas
-print(len(result))
+print(f'\nNúmero de palavras encontradas: {len(result)}')
