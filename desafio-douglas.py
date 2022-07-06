@@ -1,4 +1,3 @@
-from operator import truediv
 import requests
 import re
 import html2text
@@ -40,8 +39,9 @@ print(html.handle(str(tag)))
 
 # criando uma lista que recebe o corpo do html e separa as palavras
 arr_body = [re.split("\s", s) for s in tag.strings if s != '\n']
+
 # cada palavra na lista de palavras do 'array_body' é passada como parâmetro 
-# para 'check_work' e se retornar true a palavra é inserida no array 'result'
+# para 'check_word' e se retornar true a palavra é inserida no array 'result'
 result = [word for array in arr_body for word in array if check_word(word)]
 
 # lista de palavras encontradas
